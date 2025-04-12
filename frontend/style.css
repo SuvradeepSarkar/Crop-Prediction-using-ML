@@ -1,0 +1,97 @@
+body {
+  background: url('./assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(0px);
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+  
+  header {
+    display: flex;
+    align-items: center;
+  }
+  
+  header img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  main.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .left {
+    flex: 1;
+  }
+  
+  .left h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .left img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+  }
+  
+  .right {
+    flex: 1.5;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+  }
+  
+  .right ul {
+    padding-left: 1.2rem;
+  }
+  
+  form {
+    margin-top: 1rem;
+  }
+  
+  .form-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    background-color: #2962ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0039cb;
+  }
+  
+  #resultText {
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2e7d32;
+  }
+  

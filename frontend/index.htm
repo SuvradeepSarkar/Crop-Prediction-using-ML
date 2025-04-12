@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Croppy - Crop Prediction</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="./assets/logo.jpg" alt="Logo" />
+    <h1>Croppy</h1>
+  </header>
+
+  <main class="content">
+    <div class="left">
+      <h5>Weather forecasting and predicting the amount of rainfall that will occur in an area can be very tedious. For the purpose of brevity the method considers the factors whose effect is more prominent on the amount of effective rainfall. The soil moisture and pH values are considered for suitable crop cultivation.</h5>
+    </div>
+    <div class="right">
+      <p>
+        At croppy, we blend cutting-edge technology with agricultural expertise to empower farmers and stakeholders. Our mission? To revolutionize crop management and yield prediction. Here what we offer:
+      </p>
+      <ul>
+        <li><strong>Tailored Recommendations:</strong> Discover the best crops suited for your region, considering climate, soil nutrients, and market trends.</li>
+        <li><strong>Data Visualization:</strong> Explore insights through interactive charts, graphs, and pie charts.</li>
+        <li><strong>Accurate Predictions:</strong> Forecast yields using ML based on environmental and soil data.</li>
+      </ul>
+
+      <h3>Add Soil information:</h3>
+      <form id="cropForm">
+        <div class="form-group">
+          <input type="number" id="N" placeholder="Enter N value" required />
+          <input type="number" id="P" placeholder="Enter P value" required />
+        </div>
+        <div class="form-group">
+          <input type="number" id="Ph" placeholder="Enter Ph level" required />
+          <input type="number" id="humidity" placeholder="Enter Humidity level" required />
+        </div>
+        <div class="form-group">
+          <input type="number" id="rainf" placeholder="Enter rainfall level" required />
+          <input type="number" id="temp" placeholder="Enter soil temperature" required />
+        </div>
+        <button type="submit">Submit</button>
+        <p id="resultText"></p>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
